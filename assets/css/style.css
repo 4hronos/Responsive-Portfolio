@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/bg.png);
+}
+
+.wrapper{
+    height: 95vh;
+    width: 100vw;
+}
+
+/* Header */
+
+@font-face{
+    font-family: tomatoes;
+    src: url(../fonts/Tomatoes-O8L8.ttf);
+}
+*:not(#logo){
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#masthead{
+    width: 100%;
+    background-color: #ededed;
+    height: 81px;
+    border-bottom: 2px solid #ccc;
+    position: fixed;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    clear: both;
+}
+#logo{
+    background-image: linear-gradient(to right, #FC354C 0%, #0ABFBC  51%, #FC354C  100%);
+    width: 250px;
+    height: 79px;
+    color: blanchedalmond;
+    font-family: tomatoes;
+    float: left;
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 79px;
+    text-decoration: none;
+    border-radius: 1px;
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+#logo:hover {
+    background-position: right center; 
+    color: blanchedalmond;
+}
+nav{
+    float: right;
+    margin-top: 8px;
+
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    padding-left: 25px;
+    text-align: center;
+
+}
+nav > ul > li > a{
+    text-decoration: none;
+    border-left: 2px solid rgb(219, 206, 206);
+    padding-left: 15px;
+    color: gray;
+    font-size: 17px;
+}
+a[href*="index"]{
+    border: none;
+}
+nav > ul > li > a:hover{
+    color: gold;
+    font-weight: 500px;
+}
+
+/* about content */
+
+.spacer{
+    width: 100%;
+    height: 130px;
+    display: block;
+}
+
+.main-container{
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    max-width: 960px;
+}
+
+.main-section{
+    width: 100%;
+    max-width: 650px;
+    float: left;
+    background-color: honeydew;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    line-height: 20px;
+}
+.sidebar{
+    width: 100%;
+    max-width: 270px;
+    float: right;
+    background-color: honeydew;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+h1{
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 1px solid gray;
+    height: 30px;
+    margin-bottom: 10px;
+
+}
+.emil-image{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+h2{
+    font-size: 18px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px ;
+}
+.sidebar img{
+    max-width: 100%;
+    max-width: 66px;
+}
+.sidebar li{
+    display: inline-block;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+}
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;    
+}
+
+/* contact page */
+
+#contact form{
+    margin: 5px;
+}
+label, textarea, input{
+    display: block;
+    margin: 5px 0 5px;
+    width: 100%;
+}
+textarea{
+    height: 160px;
+}
+
+/* portfolio page */
+
+.work{
+    width: 196px;
+    float: left;
+    margin: 5px;
+    position: relative;
+}
+.work img{
+    width: 100%;
+    border-radius: 5px;
+
+}
+h3{
+    position: absolute;
+    width: 100%;
+    bottom: 17px;
+    height: 24px;
+    text-align: center;
+    background-image: linear-gradient(to right, #FC354C 0%, #0ABFBC  51%, #FC354C  100%);
+    color: blanchedalmond;
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+h3:hover{
+    background-position: right center; 
+    color: blanchedalmond;
+}
+
+/* Media */
+
+@media only screen and (max-width: 980px) {
+    #masthead{
+        position: static;
+        margin-bottom: 50px;
+    }
+    .spacer{
+        height: 0;
+    }
+    #logo{
+        position: static;
+        width: 100%;
+        z-index: 99;
+    }
+    .emil-image{
+        width: 100%;
+        height: auto;
+        max-width: 250px;
+    }
+    nav{
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        background-color: black;
+        height: 30px;
+        line-height: 27px;
+    }
+    nav ul li a{
+        border: none;
+    }
+    nav ul li{
+        padding: 0;
+    }
+    .main-container{
+        width: 100%;
+        padding: 0 50px 0;
+    }
+    .main-section{
+        max-width: 100%;
+        width: 100%;
+    }
+    .sidebar{
+        max-width: 100%;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+
+    }
+    footer{
+        margin-top: 20px;
+        background-color: #666;
+        width: 100%;
+        height: 40px;
+        display: inline-block;
+        color:white;
+        line-height: 35px;
+        border-top: 5px solid #4aaaa5
+    }
+    .work{
+        width: 100%;
+        max-width: 650px;
+        margin: 5px 0 5px;
+        overflow: hidden;
+
+    }
+    h3{
+        height: 50px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 43px;
+        overflow: hidden;
+
+    }
+    .work img{
+        position: static;
+    }
+}
